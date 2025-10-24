@@ -1,245 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>How to Get Started with MyFundedFutures — Step-by-step Tutorial</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Step-by-step guide to getting started with MyFundedFutures: setup, rules, trading platforms, and video tutorials by Maan Patel" />
+  <title>MyFundedFutures Tutorial | Maan Patel</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d04b1f6b.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2721/2721290.png" />
   <style>
-    :root{--accent:#0b5cff;--muted:#6b7280;--bg:#f7fafc}
-    body{font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:0;background:var(--bg);color:#0f172a}
-    header{background:white;box-shadow:0 1px 0 rgba(15,23,42,0.06);padding:18px 28px;display:flex;align-items:center;gap:16px}
-    .brand{font-weight:700;color:var(--accent)}
-    nav{display:flex;gap:10px;flex-wrap:wrap}
-    nav a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:8px}
-    nav a.active, nav a:hover{background:#eef2ff;color:var(--accent)}
-    main{max-width:980px;margin:28px auto;padding:18px}
-    .page{display:none;background:white;padding:20px;border-radius:12px;margin-bottom:14px;box-shadow:0 6px 24px rgba(2,6,23,0.06)}
-    .page.active{display:block}
-    h1,h2{color:#08112a}
-    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
-    aside{background:#fff;padding:12px;border-radius:10px}
-    footer{max-width:980px;margin:0 auto;padding:20px;text-align:center;color:var(--muted)}
-    .resources ul{list-style:disc;margin-left:18px}
-    .video{margin:8px 0}
-    .small{font-size:0.9rem;color:var(--muted)}
-    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:white;text-decoration:none}
-    .code{background:#0f172a;color:#fff;padding:6px 10px;border-radius:8px;display:inline-block;font-family:monospace}
-    nav .right{margin-left:auto}
-    @media(max-width:900px){.grid{grid-template-columns:1fr}}
+    body { background-color: #0d1117; color: #e6edf3; scroll-behavior: smooth; }
+    section { padding-top: 4rem; padding-bottom: 4rem; }
+    h1, h2, h3 { font-weight: 700; }
+    .divider { height: 2px; background: linear-gradient(to right, #6366f1, #22d3ee); width: 60px; margin: 1rem auto; border-radius: 1px; }
   </style>
 </head>
-<body>
-  <header>
-    <div class="brand">MyFundedFutures — Starter Tutorial</div>
-    <nav id="site-nav">
-      <a href="#intro" data-page="intro" class="active">1 • Intro</a>
-      <a href="#accounts" data-page="accounts">2 • Account Types</a>
-      <a href="#rules" data-page="rules">3 • Rules & Risk</a>
-      <a href="#setup" data-page="setup">4 • Platform Setup</a>
-      <a href="#strategy" data-page="strategy">5 • Basic Strategies</a>
-      <a href="#practice" data-page="practice">6 • Practice Plan</a>
-      <a href="#videos" data-page="videos">7 • Videos & Playlists</a>
-      <a href="#faqs" data-page="faqs">8 • FAQs</a>
-      <a href="#troubleshoot" data-page="troubleshoot">9 • Troubleshooting</a>
-      <a href="#next" data-page="next">10 • Next Steps</a>
-    </nav>
+<body class="font-sans leading-relaxed">
+
+  <!-- Navbar -->
+  <header class="bg-gray-900 shadow-md fixed top-0 w-full z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-xl font-bold text-indigo-400">MyFundedFutures</h1>
+      <nav class="space-x-6 text-sm">
+        <a href="#intro" class="hover:text-indigo-400">Intro</a>
+        <a href="#account" class="hover:text-indigo-400">Account Types</a>
+        <a href="#rules" class="hover:text-indigo-400">Rules</a>
+        <a href="#platform" class="hover:text-indigo-400">Platform Setup</a>
+        <a href="#strategy" class="hover:text-indigo-400">Strategy</a>
+        <a href="#practice" class="hover:text-indigo-400">Practice Plan</a>
+        <a href="#videos" class="hover:text-indigo-400">Videos</a>
+        <a href="#faq" class="hover:text-indigo-400">FAQ</a>
+        <a href="#troubleshoot" class="hover:text-indigo-400">Troubleshoot</a>
+        <a href="#next" class="hover:text-indigo-400">Next Steps</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <div class="grid">
-      <div>
-        <!-- Page 1: Intro -->
-        <section id="intro" class="page active" data-title="Introduction">
-          <h1>1. Introduction — What is MyFundedFutures?</h1>
-          <p class="small">MyFundedFutures is a futures prop trading firm offering sim-funded evaluations and live-funded accounts. This tutorial walks you from signup to first payout with links to official resources, video walkthroughs, and an actionable practice plan.</p>
-          <h2>Quick roadmap</h2>
-          <ol>
-            <li>Choose an account type and evaluate (Challenge)</li>
-            <li>Pass the simulation step and verify</li>
-            <li>Receive funded account and follow live rules</li>
-            <li>Request payouts per payout rules</li>
-          </ol>
-          <p class="small">(Links to MyFundedFutures official site, help center and video channels are in the Resources section.)</p>
-        </section>
-
-        <!-- Page 2: Account Types -->
-        <section id="accounts" class="page" data-title="Account Types">
-          <h1>2. Account Types & Plans</h1>
-          <p>MyFundedFutures offers multiple plans (Starter, Core/Scale, Pro, Expert) with different objectives, profit split and payout cadence. Choose based on bankroll, risk appetite and target instrument size.</p>
-          <h3>How to choose</h3>
-          <ul>
-            <li><strong>Starter:</strong> good for newer traders or smaller contract sizes.</li>
-            <li><strong>Core / Scale:</strong> better for building a scaling plan and accessing larger funded accounts.</li>
-            <li><strong>Pro / Expert:</strong> for experienced traders seeking higher caps and different verification rules.</li>
-          </ul>
-          <p class="small">See official plan details in the Resources panel (official site &amp; help docs).</p>
-        </section>
-
-        <!-- Page 3: Rules & Risk -->
-        <section id="rules" class="page" data-title="Rules & Risk Management">
-          <h1>3. Rules, Limits & Risk Management</h1>
-          <p>Rules change — always confirm the latest rules before you trade. Key things to understand:</p>
-          <ul>
-            <li>Daily profit targets and minimum withdrawal requirements</li>
-            <li>Trailing loss and session/overnight loss limits</li>
-            <li>Prohibited conduct (e.g., wash trading, sharing accounts)</li>
-            <li>Scaling plan requirements and number of allowed accounts</li>
-          </ul>
-          <p class="small">We link to the official rules and the scaled plan help articles in Resources.</p>
-        </section>
-
-        <!-- Page 4: Platform Setup -->
-        <section id="setup" class="page" data-title="Platform Setup">
-          <h1>4. Platform Setup — Trading software & data</h1>
-          <p>Common platforms used with MyFundedFutures include:</p>
-          <ul>
-            <li>TradingView (charting & alerts)</li>
-            <li>Sierra Chart / NinjaTrader / Bookmap (advanced orderflow)</li>
-            <li>Broker gateway / CME market data (ensure correct exchange and permissions)</li>
-          </ul>
-          <h3>Checklist</h3>
-          <ol>
-            <li>Create MyFundedFutures account and choose plan</li>
-            <li>Install your charting platform</li>
-            <li>Connect to data feed or use simulated data per firm guidance</li>
-            <li>Test order sending in a sim environment</li>
-          </ol>
-        </section>
-
-        <!-- Page 5: Strategies -->
-        <section id="strategy" class="page" data-title="Basic Strategies">
-          <h1>5. Simple strategy ideas to practice</h1>
-          <p>Start with simple, repeatable setups you can execute with discipline:</p>
-          <ul>
-            <li>Pullback with trend confirmation on 5/15-minute charts</li>
-            <li>Breakout with defined risk (stop below/above breakout candle)</li>
-            <li>Trend-following with ATR-based stops</li>
-            <li>Scalping small moves with strict risk per trade</li>
-          </ul>
-          <p class="small">Document every trade in a trading journal — the single highest-leverage habit for improving fast.</p>
-        </section>
-
-        <!-- Page 6: Practice Plan -->
-        <section id="practice" class="page" data-title="Practice Plan">
-          <h1>6. 30-Day Practice Plan</h1>
-          <p>Week 1 — Setup & small live-sim trades. Focus: platform familiarity and journal format.</p>
-          <p>Week 2 — Execute repeatable setups, limit contract size. Focus: entry/exit consistency.</p>
-          <p>Week 3 — Increase tempo (if consistent) and test scaling rules. Focus: streaks and drawdown handling.</p>
-          <p>Week 4 — Mimic evaluation rules for consecutive days/daily profit targets.</p>
-          <h3>Daily checklist</h3>
-          <ul>
-            <li>Review economic calendar</li>
-            <li>Define instrument, bias, and risk per trade</li>
-            <li>Log trades and post-mortem each session</li>
-          </ul>
-        </section>
-
-        <!-- Page 7: Videos & Playlists -->
-        <section id="videos" class="page" data-title="Videos & Playlists">
-          <h1>7. Official Videos & Recommended Tutorials</h1>
-          <p>Official MyFundedFutures YouTube channel and curated tutorials to watch (select examples):</p>
-          <div class="resources">
-            <ul>
-              <li><a href="https://myfundedfutures.com/" target="_blank">MyFundedFutures — Official site</a> — start here for signup and plan overviews.</li>
-              <li><a href="https://help.myfundedfutures.com/en/articles/11533540-myfunded-futures-funded-account-rules-and-prop-trading-challenge-guide" target="_blank">Official: Funded account rules &amp; challenge guide</a> — must-read before trading.</li>
-              <li><a href="https://www.youtube.com/@MyFundedFuturesPropFirm" target="_blank">MyFundedFutures YouTube channel</a> — official webinars & livestreams.</li>
-              <li><a href="https://www.youtube.com/watch?v=diH2p13JeXg" target="_blank">Full guide video — community tutorial</a> — walkthrough of plans and tips.</li>
-              <li><a href="https://myfundedfutures.com/blog/futures-trading-plan-beginners" target="_blank">How to build a futures trading plan (official blog)</a> — planning templates.</li>
-            </ul>
-          </div>
-          <h3>Embedded example video</h3>
-          <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/diH2p13JeXg" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </section>
-
-        <!-- Page 8: FAQs -->
-        <section id="faqs" class="page" data-title="FAQs">
-          <h1>8. Frequently Asked Questions</h1>
-          <h3>Q: How long does the evaluation take?</h3>
-          <p>A: Evaluation duration depends on your trading speed and whether you meet objective targets; some traders pass in a few days, others take longer.</p>
-          <h3>Q: Are there limits on accounts?</h3>
-          <p>A: MyFundedFutures has limits (for example: number of sim-funded accounts per household). See the official help center for exact current limits.</p>
-        </section>
-
-        <!-- Page 9: Troubleshooting -->
-        <section id="troubleshoot" class="page" data-title="Troubleshooting">
-          <h1>9. Troubleshooting & Common Pitfalls</h1>
-          <ul>
-            <li>Dashboard not updating — check official status & contact support</li>
-            <li>Data feed mismatch — verify instrument symbols and exchange (CME vs others)</li>
-            <li>Rules violation flags — screenshot and contact support if you believe there is an error</li>
-          </ul>
-        </section>
-
-        <!-- Page 10: Next Steps -->
-        <section id="next" class="page" data-title="Next Steps">
-          <h1>10. Next Steps & Checklist</h1>
-          <ol>
-            <li>Read the official rules (linked in Resources)</li>
-            <li>Pick a plan and purchase the evaluation</li>
-            <li>Run the 30-day practice plan while journaling every trade</li>
-            <li>Watch the official channel weekly livestreams</li>
-            <li>When funded — request payouts and follow live-account rules</li>
-          </ol>
-          <p class="small">Good luck — trade small, protect capital, and journal everything.</p>
-        </section>
-
-      </div>
-
-      <aside>
-        <h3>Quick Resources</h3>
-        <p class="small">Clickable collection of official links, help docs, and curated videos.</p>
-        <div class="resources">
-          <ul>
-            <li><a href="https://myfundedfutures.com/" target="_blank">Official site — myfundedfutures.com</a></li>
-            <li><a href="https://help.myfundedfutures.com/en/" target="_blank">Help Center (rules & docs)</a></li>
-            <li><a href="https://help.myfundedfutures.com/en/articles/11533540-myfunded-futures-funded-account-rules-and-prop-trading-challenge-guide" target="_blank">Funded account rules &amp; challenge guide</a></li>
-            <li><a href="https://help.myfundedfutures.com/en/articles/8406827-starter-and-starter-plus-scaling-plan" target="_blank">Starter &amp; Scaling Plan (help)</a></li>
-            <li><a href="https://www.youtube.com/@MyFundedFuturesPropFirm" target="_blank">Official YouTube channel</a></li>
-            <li><a href="https://myfundedfutures.com/blog/futures-trading-plan-beginners" target="_blank">Official blog: trading plan guide</a></li>
-            <li><a href="https://www.youtube.com/watch?v=diH2p13JeXg" target="_blank">Community: Full guide video</a></li>
-          </ul>
-        </div>
-
-        <h3>Download</h3>
-        <p class="small">Save this single-file tutorial to host as a GitHub Pages site. Rename file to <span class="code">index.html</span> for automatic Pages deployment.</p>
-        <a class="btn" href="#" id="download-btn">Save / Download</a>
-
-        <h3 class="small" style="margin-top:12px">Notes</h3>
-        <p class="small">This guide is not legal or financial advice. Always read the firm rules directly on their site before trading.</p>
-      </aside>
+  <!-- Hero -->
+  <section id="intro" class="text-center pt-32 pb-20 bg-gradient-to-b from-gray-900 to-gray-800">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">🚀 Getting Started with MyFundedFutures</h1>
+    <p class="text-gray-400 max-w-2xl mx-auto">
+      A full tutorial to understand, join, and succeed in the <strong>MyFundedFutures</strong> prop firm by <strong>Maan Patel</strong>.
+    </p>
+    <div class="mt-6">
+      <a href="https://myfundedfutures.com" target="_blank" class="inline-block px-6 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-xl text-white font-semibold">
+        🌐 Visit MyFundedFutures
+      </a>
     </div>
-  </main>
+  </section>
 
-  <footer>
-    Created by Maan Patel — MyFundedFutures starter walkthrough. Last updated: <!-- dynamic -->
-    <script>document.querySelector('footer').innerHTML = 'Created by Maan Patel — MyFundedFutures starter walkthrough. Last updated: ' + new Date().toLocaleDateString();</script>
+  <!-- Sections -->
+  <section id="account" class="container mx-auto px-6">
+    <h2 class="text-3xl text-center mb-2">💼 Account Types</h2>
+    <div class="divider"></div>
+    <p class="text-center text-gray-300 max-w-3xl mx-auto mb-6">Learn about evaluation, express, and live-funded accounts — their rules, profit targets, and drawdown limits.</p>
+    <ul class="list-disc list-inside max-w-2xl mx-auto text-gray-300 space-y-2">
+      <li><strong>Evaluation:</strong> Simulated stage to prove consistency.</li>
+      <li><strong>Express:</strong> Straightforward one-step evaluation with higher targets.</li>
+      <li><strong>Funded:</strong> Real trading stage with daily/overall drawdown rules.</li>
+    </ul>
+  </section>
+
+  <section id="rules" class="bg-gray-900">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl text-center mb-2">📏 Rules & Objectives</h2>
+      <div class="divider"></div>
+      <ul class="list-disc list-inside max-w-3xl mx-auto text-gray-300 space-y-3">
+        <li>Meet profit target within the trading period.</li>
+        <li>Avoid daily or max drawdown breaches.</li>
+        <li>Trade minimum required days before passing.</li>
+        <li>Use approved platforms (Tradovate, Rithmic, etc.).</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="platform" class="container mx-auto px-6 mt-16">
+    <h2 class="text-3xl text-center mb-2">💻 Platform Setup</h2>
+    <div class="divider"></div>
+    <p class="text-gray-300 text-center mb-6">How to connect your evaluation account to a platform:</p>
+    <ol class="list-decimal list-inside max-w-3xl mx-auto space-y-2 text-gray-300">
+      <li>Purchase your challenge on <a href="https://myfundedfutures.com" target="_blank" class="text-indigo-400 underline">MyFundedFutures.com</a>.</li>
+      <li>Wait for credentials email from Rithmic or Tradovate.</li>
+      <li>Install <a href="https://rithmic.com" target="_blank" class="text-indigo-400 underline">R|Trader Pro</a> or <a href="https://tradovate.com" target="_blank" class="text-indigo-400 underline">Tradovate</a>.</li>
+      <li>Connect using your evaluation login and begin paper trading.</li>
+    </ol>
+  </section>
+
+  <section id="strategy" class="bg-gray-900 mt-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl text-center mb-2">🎯 Trading Strategy</h2>
+      <div class="divider"></div>
+      <p class="text-gray-300 max-w-3xl mx-auto text-center">
+        Use a structured futures trading plan: analyze market bias, identify high-probability setups, and manage risk systematically.
+      </p>
+    </div>
+  </section>
+
+  <section id="practice" class="container mx-auto px-6 mt-16">
+    <h2 class="text-3xl text-center mb-2">🧠 Practice Plan</h2>
+    <div class="divider"></div>
+    <p class="text-gray-300 max-w-3xl mx-auto text-center">
+      Develop consistency using daily replay and journaling tools like Tradovate Replay or NinjaTrader Market Replay.
+    </p>
+  </section>
+
+  <section id="videos" class="bg-gray-900 mt-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl text-center mb-2">🎥 Video Tutorials</h2>
+      <div class="divider"></div>
+      <p class="text-gray-300 text-center mb-6">Watch these official and community tutorials to get started quickly:</p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <iframe class="w-full rounded-2xl" height="315" src="https://www.youtube.com/embed/V9qYFbdc5gI" allowfullscreen></iframe>
+        <iframe class="w-full rounded-2xl" height="315" src="https://www.youtube.com/embed/ZKrb5fA4soM" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="container mx-auto px-6 mt-16">
+    <h2 class="text-3xl text-center mb-2">❓ Frequently Asked Questions</h2>
+    <div class="divider"></div>
+    <ul class="list-disc list-inside max-w-3xl mx-auto text-gray-300 space-y-3">
+      <li><strong>Is MyFundedFutures legit?</strong> Yes, it’s a registered prop firm offering simulated and live trading opportunities.</li>
+      <li><strong>What markets can I trade?</strong> CME futures — ES, NQ, CL, GC, etc.</li>
+      <li><strong>How long does funding take?</strong> Usually 1–2 business days after passing the evaluation.</li>
+      <li><strong>Is overnight trading allowed?</strong> Yes, depending on account type.</li>
+    </ul>
+  </section>
+
+  <section id="troubleshoot" class="bg-gray-900 mt-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl text-center mb-2">🧩 Troubleshooting</h2>
+      <div class="divider"></div>
+      <p class="text-gray-300 text-center max-w-3xl mx-auto mb-6">If you face login or connection issues:</p>
+      <ul class="list-disc list-inside max-w-3xl mx-auto text-gray-300 space-y-2">
+        <li>Ensure correct username and server (e.g., Rithmic Paper Trading).</li>
+        <li>Restart the platform after credential changes.</li>
+        <li>Contact <a href="mailto:support@myfundedfutures.com" class="text-indigo-400 underline">support@myfundedfutures.com</a>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="next" class="container mx-auto px-6 mt-16">
+    <h2 class="text-3xl text-center mb-2">🌟 Next Steps</h2>
+    <div class="divider"></div>
+    <p class="text-gray-300 max-w-3xl mx-auto text-center">
+      Once consistent, explore portfolio scaling and professional funding options. Continue learning risk and discipline.
+    </p>
+    <div class="text-center mt-6">
+      <a href="https://github.com/maanpatel-finance" target="_blank" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-xl text-white font-semibold">
+        <i class="fab fa-github mr-2"></i>View Maan Patel on GitHub
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-center mt-16 py-10 border-t border-gray-800">
+    <p class="text-gray-400 mb-2">Built by <strong>Maan Patel</strong></p>
+    <p class="text-gray-400">📧 <a href="mailto:pmaan609@gmail.com" class="hover:underline text-indigo-400">pmaan609@gmail.com</a></p>
+    <p class="text-sm text-gray-500 mt-2">
+      <a href="https://github.com/maanpatel-finance/maanpatel-finance.github.io" target="_blank" class="text-indigo-400 hover:underline">
+        View this project on GitHub
+      </a> | © 2025
+    </p>
   </footer>
-
-  <script>
-    // Simple client routing for the single-file 10-page tutorial
-    const pages = document.querySelectorAll('.page');
-    const navlinks = document.querySelectorAll('nav a');
-    function show(pageId){
-      pages.forEach(p=>p.classList.remove('active'));
-      navlinks.forEach(n=>n.classList.remove('active'));
-      const el = document.getElementById(pageId);
-      if(el) el.classList.add('active');
-      const activeNav = document.querySelector('nav a[data-page="'+pageId+'"]');
-      if(activeNav) activeNav.classList.add('active');
-      history.replaceState(null,'', '#'+pageId);
-    }
-    navlinks.forEach(a=>a.addEventListener('click', e=>{ e.preventDefault(); show(a.dataset.page); }));
-    // Load page from hash
-    const hash = location.hash.replace('#','') || 'intro'; show(hash);
-
-    // Download functionality (client-side)
-    document.getElementById('download-btn').addEventListener('click', ()=>{
-      const blob = new Blob([document.documentElement.outerHTML], {type:'text/html'});
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a'); a.href = url; a.download = 'MyFundedFutures_Tutorial.html'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
-    });
-  </script>
 </body>
 </html>

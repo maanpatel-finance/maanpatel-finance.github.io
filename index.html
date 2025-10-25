@@ -59,6 +59,30 @@
     </div>
   </section>
 
+  <section id="market-ticker" class="bg-gray-800 py-4">
+  <div class="container mx-auto">
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+      {
+        "symbols": [
+          {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500"},
+          {"proName": "FOREXCOM:NSXUSD", "title": "Nasdaq 100"},
+          {"proName": "CRYPTO:BTCUSD", "title": "Bitcoin"},
+          {"proName": "FX:EURUSD", "title": "EUR/USD"},
+          {"proName": "OANDA:XAUUSD", "title": "Gold"}
+        ],
+        "colorTheme": "dark",
+        "isTransparent": false,
+        "displayMode": "adaptive",
+        "locale": "en"
+      }
+      </script>
+    </div>
+  </div>
+</section>
+  
+  
 <section id="aboutme" class="container mx-auto px-6 mt-16">
   <h2 class="text-3xl text-center mb-2 text-indigo-400 font-semibold">💼 About Me</h2>
   <div class="divider"></div>
@@ -302,28 +326,7 @@
     </div>
   </section>
 
-  <section id="market-ticker" class="bg-gray-800 py-4">
-  <div class="container mx-auto">
-    <div class="tradingview-widget-container">
-      <div class="tradingview-widget-container__widget"></div>
-      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-      {
-        "symbols": [
-          {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500"},
-          {"proName": "FOREXCOM:NSXUSD", "title": "Nasdaq 100"},
-          {"proName": "CRYPTO:BTCUSD", "title": "Bitcoin"},
-          {"proName": "FX:EURUSD", "title": "EUR/USD"},
-          {"proName": "OANDA:XAUUSD", "title": "Gold"}
-        ],
-        "colorTheme": "dark",
-        "isTransparent": false,
-        "displayMode": "adaptive",
-        "locale": "en"
-      }
-      </script>
-    </div>
-  </div>
-</section>
+
 
   <!-- Contact -->
   <footer id="contact" class="bg-gray-900 text-center mt-16 py-10 border-t border-gray-800">

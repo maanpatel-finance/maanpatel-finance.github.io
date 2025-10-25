@@ -13,147 +13,166 @@
     section { padding-top: 4rem; padding-bottom: 4rem; }
     h1, h2, h3 { font-weight: 700; }
     .divider { height: 2px; background: linear-gradient(to right, #6366f1, #22d3ee); width: 60px; margin: 1rem auto; border-radius: 1px; }
+    a { transition: color 0.3s, background-color 0.3s; }
   </style>
 </head>
 <body class="font-sans leading-relaxed">
 
   <!-- Navbar -->
-  <header class="bg-gray-900 shadow-md fixed top-0 w-full z-50">
+  <header class="bg-gray-900 shadow-md fixed top-0 w-full z-50 border-b border-gray-800">
     <div class="container mx-auto flex justify-between items-center py-4 px-6">
       <h1 class="text-xl font-bold text-indigo-400">MyFundedFutures</h1>
-      <nav class="space-x-6 text-sm">
+      <nav class="space-x-6 text-sm text-gray-300">
         <a href="#intro" class="hover:text-indigo-400">Intro</a>
-        <a href="#account" class="hover:text-indigo-400">Account Types</a>
+        <a href="#account" class="hover:text-indigo-400">Accounts</a>
         <a href="#rules" class="hover:text-indigo-400">Rules</a>
-        <a href="#platform" class="hover:text-indigo-400">Platform Setup</a>
+        <a href="#platform" class="hover:text-indigo-400">Platform</a>
         <a href="#strategy" class="hover:text-indigo-400">Strategy</a>
-        <a href="#practice" class="hover:text-indigo-400">Practice Plan</a>
+        <a href="#practice" class="hover:text-indigo-400">Practice</a>
         <a href="#videos" class="hover:text-indigo-400">Videos</a>
         <a href="#faq" class="hover:text-indigo-400">FAQ</a>
-        <a href="#troubleshoot" class="hover:text-indigo-400">Troubleshoot</a>
-        <a href="#next" class="hover:text-indigo-400">Next Steps</a>
+        <a href="#troubleshoot" class="hover:text-indigo-400">Fix</a>
+        <a href="#next" class="hover:text-indigo-400">Next</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section id="intro" class="text-center pt-32 pb-20 bg-gradient-to-b from-gray-900 to-gray-800">
-    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">🚀 Getting Started with MyFundedFutures</h1>
-    <p class="text-gray-400 max-w-2xl mx-auto">
-      A full tutorial to understand, join, and succeed in the <strong>MyFundedFutures</strong> prop firm by <strong>Maan Patel</strong>.
+    <h1 class="text-5xl font-extrabold mb-4 text-indigo-400">🚀 Getting Started with MyFundedFutures</h1>
+    <p class="text-gray-300 max-w-2xl mx-auto mb-6">
+      A complete guide to understand, join, and excel in <span class="text-indigo-400 font-semibold">MyFundedFutures</span> — designed and curated by <strong>Maan Patel</strong>.
     </p>
-    <div class="mt-6">
-      <a href="https://myfundedfutures.com" target="_blank" class="inline-block px-6 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-xl text-white font-semibold">
-        🌐 Visit MyFundedFutures
-      </a>
-    </div>
+    <a href="https://myfundedfutures.com" target="_blank" class="inline-block px-6 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-xl text-white font-semibold shadow-lg">
+      🌐 Visit MyFundedFutures
+    </a>
   </section>
 
-  <!-- Sections -->
-  <section id="account" class="container mx-auto px-6">
-    <h2 class="text-3xl text-center mb-2">💼 Account Types</h2>
+  <!-- Account Types -->
+  <section id="account" class="container mx-auto px-6 mt-10">
+    <h2 class="text-3xl text-center mb-2 text-indigo-400">💼 Account Types</h2>
     <div class="divider"></div>
-    <p class="text-center text-gray-300 max-w-3xl mx-auto mb-6">Learn about evaluation, express, and live-funded accounts — their rules, profit targets, and drawdown limits.</p>
-    <ul class="list-disc list-inside max-w-2xl mx-auto text-gray-300 space-y-2">
-      <li><strong>Evaluation:</strong> Simulated stage to prove consistency.</li>
-      <li><strong>Express:</strong> Straightforward one-step evaluation with higher targets.</li>
-      <li><strong>Funded:</strong> Real trading stage with daily/overall drawdown rules.</li>
-    </ul>
-  </section>
-
-  <section id="rules" class="bg-gray-900">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl text-center mb-2">📏 Rules & Objectives</h2>
-      <div class="divider"></div>
-      <ul class="list-disc list-inside max-w-3xl mx-auto text-gray-300 space-y-3">
-        <li>Meet profit target within the trading period.</li>
-        <li>Avoid daily or max drawdown breaches.</li>
-        <li>Trade minimum required days before passing.</li>
-        <li>Use approved platforms (Tradovate, Rithmic, etc.).</li>
+    <div class="bg-gray-900 p-8 rounded-2xl shadow-lg max-w-3xl mx-auto text-gray-300 leading-relaxed">
+      <p class="text-center mb-6">Understand each account type before starting your challenge:</p>
+      <ul class="list-disc list-inside space-y-3">
+        <li><strong>Evaluation:</strong> Simulated stage to demonstrate consistency and risk control.</li>
+        <li><strong>Express:</strong> One-step evaluation with higher profit targets but faster funding.</li>
+        <li><strong>Funded:</strong> Real trading stage with live capital and strict drawdown management.</li>
       </ul>
     </div>
   </section>
 
-  <section id="platform" class="container mx-auto px-6 mt-16">
-    <h2 class="text-3xl text-center mb-2">💻 Platform Setup</h2>
-    <div class="divider"></div>
-    <p class="text-gray-300 text-center mb-6">How to connect your evaluation account to a platform:</p>
-    <ol class="list-decimal list-inside max-w-3xl mx-auto space-y-2 text-gray-300">
-      <li>Purchase your challenge on <a href="https://myfundedfutures.com" target="_blank" class="text-indigo-400 underline">MyFundedFutures.com</a>.</li>
-      <li>Wait for credentials email from Rithmic or Tradovate.</li>
-      <li>Install <a href="https://rithmic.com" target="_blank" class="text-indigo-400 underline">R|Trader Pro</a> or <a href="https://tradovate.com" target="_blank" class="text-indigo-400 underline">Tradovate</a>.</li>
-      <li>Connect using your evaluation login and begin paper trading.</li>
-    </ol>
-  </section>
-
-  <section id="strategy" class="bg-gray-900 mt-16">
+  <!-- Rules Section -->
+  <section id="rules" class="bg-gray-900 mt-16">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl text-center mb-2">🎯 Trading Strategy</h2>
+      <h2 class="text-3xl text-center mb-2 text-teal-400">📏 Rules & Objectives</h2>
       <div class="divider"></div>
-      <p class="text-gray-300 max-w-3xl mx-auto text-center">
-        Use a structured futures trading plan: analyze market bias, identify high-probability setups, and manage risk systematically.
-      </p>
+      <ul class="list-disc list-inside max-w-3xl mx-auto text-gray-300 space-y-3">
+        <li>Reach your profit target within the trading period.</li>
+        <li>Avoid daily and total drawdown violations.</li>
+        <li>Trade minimum required days to prove consistency.</li>
+        <li>Use only approved trading platforms (Tradovate, Rithmic, etc.).</li>
+      </ul>
     </div>
   </section>
 
-  <section id="practice" class="container mx-auto px-6 mt-16">
-    <h2 class="text-3xl text-center mb-2">🧠 Practice Plan</h2>
+  <!-- Platform Setup -->
+  <section id="platform" class="container mx-auto px-6 mt-16">
+    <h2 class="text-3xl text-center mb-2 text-indigo-400">💻 Platform Setup</h2>
     <div class="divider"></div>
-    <p class="text-gray-300 max-w-3xl mx-auto text-center">
-      Develop consistency using daily replay and journaling tools like Tradovate Replay or NinjaTrader Market Replay.
-    </p>
+    <div class="bg-gray-900 p-8 rounded-2xl shadow-lg max-w-4xl mx-auto text-gray-300 leading-relaxed">
+      <p class="text-center mb-6">Follow these steps to connect your account to a trading platform:</p>
+      <ol class="list-decimal list-inside space-y-3">
+        <li>Purchase your evaluation on <a href="https://myfundedfutures.com" target="_blank" class="text-indigo-400 underline">MyFundedFutures.com</a>.</li>
+        <li>Wait for your Rithmic or Tradovate credentials via email.</li>
+        <li>Install <a href="https://rithmic.com" target="_blank" class="text-indigo-400 underline">R|Trader Pro</a> or <a href="https://tradovate.com" target="_blank" class="text-indigo-400 underline">Tradovate</a>.</li>
+        <li>Connect and begin paper trading to meet consistency metrics.</li>
+      </ol>
+    </div>
   </section>
 
-  <section id="videos" class="bg-gray-900 mt-16">
+  <!-- Strategy -->
+  <section id="strategy" class="bg-gray-900 mt-16">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl text-center mb-2">🎥 Video Tutorials</h2>
+      <h2 class="text-3xl text-center mb-2 text-teal-400">🎯 Trading Strategy</h2>
       <div class="divider"></div>
-      <p class="text-gray-300 text-center mb-6">Watch these official and community tutorials to get started quickly:</p>
-      <div class="grid md:grid-cols-2 gap-6">
-        <iframe class="w-full rounded-2xl" height="315" src="https://www.youtube.com/embed/V9qYFbdc5gI" allowfullscreen></iframe>
-        <iframe class="w-full rounded-2xl" height="315" src="https://www.youtube.com/@MyFundedFuturesPropFirm allowfullscreen></iframe>
+      <div class="bg-gray-800 p-8 rounded-2xl shadow-lg max-w-4xl mx-auto text-gray-300 leading-relaxed">
+        <p class="text-center mb-6">
+          Apply a systematic, rule-based strategy focusing on bias, structure, and precision.
+        </p>
+        <ol class="list-decimal list-inside space-y-3">
+          <li>Determine directional bias using higher time frames.</li>
+          <li>Wait for retracement into a Fair Value Gap (FVG).</li>
+          <li>Use intraday confirmation (IFVGs, liquidity sweeps).</li>
+          <li>Set risk at 0.5–1% per trade and target 1–2R returns.</li>
+        </ol>
       </div>
     </div>
   </section>
 
+  <!-- Practice Plan -->
+  <section id="practice" class="container mx-auto px-6 mt-16">
+    <h2 class="text-3xl text-center mb-2 text-indigo-400">🧠 Practice Plan</h2>
+    <div class="divider"></div>
+    <p class="text-gray-300 max-w-3xl mx-auto text-center">
+      Develop consistency through replay sessions, journaling, and self-review using tools like Tradovate Replay or NinjaTrader Market Replay.
+    </p>
+  </section>
+
+  <!-- Videos -->
+  <section id="videos" class="bg-gray-900 mt-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl text-center mb-2 text-teal-400">🎥 Video Tutorials</h2>
+      <div class="divider"></div>
+      <p class="text-gray-300 text-center mb-6">Watch these tutorials to set up and start your evaluation successfully:</p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <iframe class="w-full rounded-2xl shadow-md" height="315" src="https://www.youtube.com/embed/V9qYFbdc5gI" allowfullscreen></iframe>
+        <iframe class="w-full rounded-2xl shadow-md" height="315" src="https://www.youtube.com/embed/2ItqUOZ6hAg" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
   <section id="faq" class="container mx-auto px-6 mt-16">
-    <h2 class="text-3xl text-center mb-2">❓ Frequently Asked Questions</h2>
+    <h2 class="text-3xl text-center mb-2 text-indigo-400">❓ Frequently Asked Questions</h2>
     <div class="divider"></div>
     <ul class="list-disc list-inside max-w-3xl mx-auto text-gray-300 space-y-3">
-      <li><strong>Is MyFundedFutures legit?</strong> Yes, it’s a registered prop firm offering simulated and live trading opportunities.</li>
-      <li><strong>What markets can I trade?</strong> CME futures — ES, NQ, CL, GC, etc.</li>
-      <li><strong>How long does funding take?</strong> Usually 1–2 business days after passing the evaluation.</li>
-      <li><strong>Is overnight trading allowed?</strong> Yes, depending on account type.</li>
+      <li><strong>Is MyFundedFutures legit?</strong> Yes — it’s a registered prop firm providing simulated and funded trading opportunities.</li>
+      <li><strong>Which markets can I trade?</strong> CME futures: ES, NQ, CL, GC, and more.</li>
+      <li><strong>How long does funding take?</strong> Usually 1–2 business days after passing evaluation.</li>
+      <li><strong>Is overnight trading allowed?</strong> Yes, depending on the account type.</li>
     </ul>
   </section>
 
+  <!-- Troubleshooting -->
   <section id="troubleshoot" class="bg-gray-900 mt-16">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl text-center mb-2">🧩 Troubleshooting</h2>
+      <h2 class="text-3xl text-center mb-2 text-teal-400">🧩 Troubleshooting</h2>
       <div class="divider"></div>
-      <p class="text-gray-300 text-center max-w-3xl mx-auto mb-6">If you face login or connection issues:</p>
       <ul class="list-disc list-inside max-w-3xl mx-auto text-gray-300 space-y-2">
-        <li>Ensure correct username and server (e.g., Rithmic Paper Trading).</li>
-        <li>Restart the platform after credential changes.</li>
-        <li>Contact <a href="mailto:support@myfundedfutures.com" class="text-indigo-400 underline">support@myfundedfutures.com</a>.</li>
+        <li>Verify correct username, server, and connection type.</li>
+        <li>Restart the platform after credential updates.</li>
+        <li>Contact <a href="mailto:support@myfundedfutures.com" class="text-indigo-400 underline">support@myfundedfutures.com</a> for help.</li>
       </ul>
     </div>
   </section>
 
-  <section id="next" class="container mx-auto px-6 mt-16">
-    <h2 class="text-3xl text-center mb-2">🌟 Next Steps</h2>
+  <!-- Next Steps -->
+  <section id="next" class="container mx-auto px-6 mt-16 mb-20">
+    <h2 class="text-3xl text-center mb-2 text-indigo-400">🌟 Next Steps</h2>
     <div class="divider"></div>
-    <p class="text-gray-300 max-w-3xl mx-auto text-center">
-      Once consistent, explore portfolio scaling and professional funding options. Continue learning risk and discipline.
+    <p class="text-gray-300 max-w-3xl mx-auto text-center mb-6">
+      Continue improving your edge, managing risk, and exploring professional funding paths. Stay disciplined and growth-focused.
     </p>
     <div class="text-center mt-6">
-      <a href="https://github.com/maanpatel-finance" target="_blank" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-xl text-white font-semibold">
+      <a href="https://github.com/maanpatel-finance" target="_blank" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-xl text-white font-semibold shadow-md">
         <i class="fab fa-github mr-2"></i>View Maan Patel on GitHub
       </a>
     </div>
   </section>
 
-  <footer class="bg-gray-900 text-center mt-16 py-10 border-t border-gray-800">
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-center py-10 border-t border-gray-800">
     <p class="text-gray-400 mb-2">Built by <strong>Maan Patel</strong></p>
     <p class="text-gray-400">📧 <a href="mailto:pmaan609@gmail.com" class="hover:underline text-indigo-400">pmaan609@gmail.com</a></p>
     <p class="text-sm text-gray-500 mt-2">

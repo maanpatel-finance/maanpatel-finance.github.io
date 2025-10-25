@@ -9,41 +9,46 @@
   <script src="https://kit.fontawesome.com/a2d04b1f6b.js" crossorigin="anonymous"></script>
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2721/2721290.png" />
   <style>
-    body { background-color: #0d1117; color: #e6edf3; scroll-behavior: smooth; }
+    body { background-color: #f8fafc; color: #1e293b; scroll-behavior: smooth; }
     section { padding-top: 4rem; padding-bottom: 4rem; }
-    h1, h2, h3 { font-weight: 700; }
-    .divider { height: 2px; background: linear-gradient(to right, #6366f1, #22d3ee); width: 60px; margin: 1rem auto; border-radius: 1px; }
+    .divider { height: 3px; background: linear-gradient(to right, #2563eb, #0ea5e9); width: 80px; margin: 1rem auto; border-radius: 2px; }
+    .glass {
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 1rem;
+    }
   </style>
 </head>
 <body class="font-sans leading-relaxed">
 
   <!-- Navbar -->
-  <header class="bg-gray-900 shadow-md fixed top-0 w-full z-50">
+  <header class="bg-white shadow-md fixed top-0 w-full z-50 border-b border-blue-100">
     <div class="container mx-auto flex justify-between items-center py-4 px-6">
-      <h1 class="text-xl font-bold text-indigo-400">Topstep Tutorial</h1>
-      <nav class="space-x-6 text-sm">
-        <a href="#intro" class="hover:text-indigo-400">Intro</a>
-        <a href="#account" class="hover:text-indigo-400">Account Sizes</a>
-        <a href="#rules" class="hover:text-indigo-400">Rules</a>
-        <a href="#platform" class="hover:text-indigo-400">Platform</a>
-        <a href="#strategy" class="hover:text-indigo-400">Strategy</a>
-        <a href="#practice" class="hover:text-indigo-400">Practice Plan</a>
-        <a href="#videos" class="hover:text-indigo-400">Videos</a>
-        <a href="#faq" class="hover:text-indigo-400">FAQ</a>
-        <a href="#troubleshoot" class="hover:text-indigo-400">Troubleshoot</a>
-        <a href="#next" class="hover:text-indigo-400">Next Steps</a>
+      <h1 class="text-xl font-bold text-blue-600">Topstep Tutorial</h1>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="#intro" class="hover:text-blue-600">Intro</a>
+        <a href="#account" class="hover:text-blue-600">Account Sizes</a>
+        <a href="#rules" class="hover:text-blue-600">Rules</a>
+        <a href="#platform" class="hover:text-blue-600">Platform</a>
+        <a href="#strategy" class="hover:text-blue-600">Strategy</a>
+        <a href="#practice" class="hover:text-blue-600">Practice Plan</a>
+        <a href="#videos" class="hover:text-blue-600">Videos</a>
+        <a href="#faq" class="hover:text-blue-600">FAQ</a>
+        <a href="#troubleshoot" class="hover:text-blue-600">Troubleshoot</a>
+        <a href="#next" class="hover:text-blue-600">Next Steps</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero / Intro -->
-  <section id="intro" class="text-center pt-32 pb-20 bg-gradient-to-b from-gray-900 to-gray-800">
-    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">🚀 Getting Started with Topstep</h1>
-    <p class="text-gray-400 max-w-2xl mx-auto">
+  <section id="intro" class="text-center pt-32 pb-20 bg-gradient-to-b from-blue-50 to-blue-100">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-blue-800">🚀 Getting Started with Topstep</h1>
+    <p class="text-gray-700 max-w-2xl mx-auto">
       A complete walkthrough of how to join the Topstep futures program, pass the evaluation, and access live funding — by <strong>Maan Patel</strong>.
     </p>
     <div class="mt-6">
-      <a href="https://www.topstep.com" target="_blank" class="inline-block px-6 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-xl text-white font-semibold">
+      <a href="https://www.topstep.com" target="_blank" class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-500 rounded-xl text-white font-semibold shadow-md">
         🌐 Visit Topstep.com
       </a>
     </div>
@@ -51,123 +56,135 @@
 
   <!-- Account Sizes -->
   <section id="account" class="container mx-auto px-6">
-    <h2 class="text-3xl text-center mb-2">💼 Account Sizes & Subscription</h2>
-    <div class="divider"></div>
-    <p class="text-center text-gray-300 max-w-3xl mx-auto mb-6">
-      Choose the size that fits your goals: $50K, $100K, $150K buying power accounts with different profit targets and monthly costs. :contentReference[oaicite:1]{index=1}
-    </p>
-    <ul class="list-disc list-inside max-w-2xl mx-auto text-gray-300 space-y-2">
-      <li><strong>$50K Buying Power:</strong> $49/month, profit target ~$3,000. :contentReference[oaicite:2]{index=2}</li>
-      <li><strong>$100K Buying Power:</strong> $99/month, profit target ~$6,000. :contentReference[oaicite:3]{index=3}</li>
-      <li><strong>$150K Buying Power:</strong> $149/month, profit target ~$9,000. :contentReference[oaicite:4]{index=4}</li>
-    </ul>
+    <div class="glass p-8 shadow-lg">
+      <h2 class="text-3xl text-center mb-2 text-blue-700">💼 Account Sizes & Subscription</h2>
+      <div class="divider"></div>
+      <p class="text-center text-gray-600 max-w-3xl mx-auto mb-6">
+        Choose the size that fits your goals: $50K, $100K, $150K buying power accounts with different profit targets and monthly costs.
+      </p>
+      <ul class="list-disc list-inside max-w-2xl mx-auto text-gray-700 space-y-2">
+        <li><strong>$50K Buying Power:</strong> $49/month, profit target ~$3,000.</li>
+        <li><strong>$100K Buying Power:</strong> $99/month, profit target ~$6,000.</li>
+        <li><strong>$150K Buying Power:</strong> $149/month, profit target ~$9,000.</li>
+      </ul>
+    </div>
   </section>
 
   <!-- Rules -->
-  <section id="rules" class="bg-gray-900">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl text-center mb-2">📏 Rules & Objectives</h2>
+  <section id="rules" class="bg-blue-50">
+    <div class="container mx-auto px-6 py-16">
+      <h2 class="text-3xl text-center mb-2 text-blue-700">📏 Rules & Objectives</h2>
       <div class="divider"></div>
-      <ul class="list-disc list-inside max-w-3xl mx-auto text-gray-300 space-y-3">
-        <li>Profit target to pass the evaluation (varies by account size). :contentReference[oaicite:5]{index=5}</li>
-        <li>Do not exceed Maximum Loss Limit or your evaluation ends. :contentReference[oaicite:6]{index=6}</li>
-        <li>Consistency rule and daily loss limits apply. :contentReference[oaicite:7]{index=7}</li>
+      <ul class="list-disc list-inside max-w-3xl mx-auto text-gray-700 space-y-3">
+        <li>Meet the profit target to pass the evaluation (varies by account size).</li>
+        <li>Do not exceed the Maximum Loss Limit or your evaluation resets.</li>
+        <li>Follow consistency and daily loss limits to remain eligible.</li>
       </ul>
     </div>
   </section>
 
   <!-- Platform Setup -->
   <section id="platform" class="container mx-auto px-6 mt-16">
-    <h2 class="text-3xl text-center mb-2">💻 Platform & Trading Setup</h2>
-    <div class="divider"></div>
-    <p class="text-gray-300 text-center mb-6">
-      Use the proprietary TopstepX™ platform built for funded trading, or supported brokers with futures data feeds. :contentReference[oaicite:9]{index=9}
-    </p>
-    <ol class="list-decimal list-inside max-w-3xl mx-auto space-y-2 text-gray-300">
-      <li>Subscribe to your selected Combine plan on Topstep.com.</li>
-      <li>Receive login credentials and set up your trading platform (TopstepX or supported partner).</li>
-      <li>Connect the data feed and start simulated trading under evaluation rules.</li>
-    </ol>
+    <div class="glass p-8 shadow-md">
+      <h2 class="text-3xl text-center mb-2 text-blue-700">💻 Platform & Trading Setup</h2>
+      <div class="divider"></div>
+      <p class="text-gray-700 text-center mb-6">
+        Use TopstepX™ or supported futures trading platforms for your evaluation and live trading experience.
+      </p>
+      <ol class="list-decimal list-inside max-w-3xl mx-auto space-y-2 text-gray-700">
+        <li>Subscribe to your Combine plan at Topstep.com.</li>
+        <li>Receive credentials and configure your trading platform.</li>
+        <li>Connect data feeds and begin simulated trading under evaluation rules.</li>
+      </ol>
+    </div>
   </section>
 
   <!-- Strategy -->
-  <section id="strategy" class="bg-gray-900 mt-16">
+  <section id="strategy" class="bg-blue-50 mt-16 py-16">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl text-center mb-2">🎯 Trading Strategy Basics</h2>
+      <h2 class="text-3xl text-center mb-2 text-blue-700">🎯 Trading Strategy Basics</h2>
       <div class="divider"></div>
-      <p class="text-gray-300 max-w-3xl mx-auto text-center">
-        Focus on building consistency, risk management, and understanding futures market structure. Your goal is to satisfy the evaluation conditions before scaling.
+      <p class="text-gray-700 max-w-3xl mx-auto text-center">
+        Build consistency through disciplined risk management and structured setups that align with futures market behavior.
       </p>
     </div>
   </section>
 
   <!-- Practice Plan -->
   <section id="practice" class="container mx-auto px-6 mt-16">
-    <h2 class="text-3xl text-center mb-2">🧠 30-Day Practice Plan</h2>
-    <div class="divider"></div>
-    <p class="text-gray-300 max-w-3xl mx-auto text-center">
-      Use a simulated account to: review your setups, log trades in a journal, limit risk per trade, and build a routine that meets the evaluation’s consistency rules.
-    </p>
+    <div class="glass p-8 shadow-md">
+      <h2 class="text-3xl text-center mb-2 text-blue-700">🧠 30-Day Practice Plan</h2>
+      <div class="divider"></div>
+      <p class="text-gray-700 max-w-3xl mx-auto text-center">
+        Use a simulated account to test strategies, log trades, and develop habits that support consistency and evaluation success.
+      </p>
+    </div>
   </section>
 
   <!-- Videos -->
-  <section id="videos" class="bg-gray-900 mt-16">
+  <section id="videos" class="bg-blue-50 mt-16 py-16">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl text-center mb-2">🎥 Video Tutorials & Reviews</h2>
+      <h2 class="text-3xl text-center mb-2 text-blue-700">🎥 Video Tutorials & Reviews</h2>
       <div class="divider"></div>
-      <p class="text-gray-300 text-center mb-6">Here are some useful video reviews and tutorials about Topstep:</p>
+      <p class="text-gray-700 text-center mb-6">Watch these helpful tutorials and trader reviews of Topstep:</p>
       <div class="grid md:grid-cols-2 gap-6">
-        <iframe class="w-full rounded-2xl" height="315" src="https://www.youtube.com/embed/7gQsgHMwkG8" allowfullscreen></iframe>
-        <iframe class="w-full rounded-2xl" height="315" src="https://www.youtube.com/watch?v=cQUd3EFtVeI" allowfullscreen></iframe>
+        <iframe class="w-full rounded-2xl shadow-lg" height="315" src="https://www.youtube.com/embed/7gQsgHMwkG8" allowfullscreen></iframe>
+        <iframe class="w-full rounded-2xl shadow-lg" height="315" src="https://www.youtube.com/embed/cQUd3EFtVeI" allowfullscreen></iframe>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
   <section id="faq" class="container mx-auto px-6 mt-16">
-    <h2 class="text-3xl text-center mb-2">❓ Frequently Asked Questions</h2>
-    <div class="divider"></div>
-    <ul class="list-disc list-inside max-w-3xl mx-auto text-gray-300 space-y-3">
-      <li><strong>What is Topstep?</strong> It's a futures prop firm that allows you to earn funding by passing the Trading Combine. :contentReference[oaicite:10]{index=10}</li>
-      <li><strong>What instruments can I trade?</strong> Futures contracts including E-mini S&P, NASDAQ, crude oil, gold, etc. :contentReference[oaicite:11]{index=11}</li>
-      <li><strong>How do payouts work?</strong> Once funded, you can request payouts — check latest rules on Topstep’s site. :contentReference[oaicite:12]{index=12}</li>
-    </ul>
+    <div class="glass p-8 shadow-md">
+      <h2 class="text-3xl text-center mb-2 text-blue-700">❓ Frequently Asked Questions</h2>
+      <div class="divider"></div>
+      <ul class="list-disc list-inside max-w-3xl mx-auto text-gray-700 space-y-3">
+        <li><strong>What is Topstep?</strong> A futures prop firm that funds traders after they pass the evaluation.</li>
+        <li><strong>What can I trade?</strong> Futures contracts including E-mini S&P, NASDAQ, Crude Oil, and Gold.</li>
+        <li><strong>How do payouts work?</strong> Funded traders can withdraw profits following Topstep’s payout schedule.</li>
+      </ul>
+    </div>
   </section>
 
   <!-- Troubleshooting -->
-  <section id="troubleshoot" class="bg-gray-900 mt-16">
+  <section id="troubleshoot" class="bg-blue-50 mt-16 py-16">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl text-center mb-2">🧩 Troubleshooting</h2>
+      <h2 class="text-3xl text-center mb-2 text-blue-700">🧩 Troubleshooting</h2>
       <div class="divider"></div>
-      <p class="text-gray-300 text-center max-w-3xl mx-auto mb-6">Encountering login or connection issues? Make sure your account credentials are correct and you’re trading within the allowed hours/data feed. Reach out to Topstep support if needed. :contentReference[oaicite:13]{index=13}</p>
-      <ul class="list-disc list-inside max-w-3xl mx-auto text-gray-300 space-y-2">
-        <li>Check that you’re using the designated server for your account.</li>
-        <li>Ensure your data feed is active and platform shows correct futures instrument symbols.</li>
-        <li>Contact support or consult the Help Center if anomalies persist.</li>
+      <p class="text-gray-700 text-center max-w-3xl mx-auto mb-6">
+        Having technical issues? Verify login credentials, check data feed connectivity, and ensure trading hours compliance.
+      </p>
+      <ul class="list-disc list-inside max-w-3xl mx-auto text-gray-700 space-y-2">
+        <li>Confirm you’re on the correct server.</li>
+        <li>Check that futures data feed symbols are active.</li>
+        <li>Contact Topstep support for persistent issues.</li>
       </ul>
     </div>
   </section>
 
   <!-- Next Steps -->
   <section id="next" class="container mx-auto px-6 mt-16">
-    <h2 class="text-3xl text-center mb-2">🌟 Next Steps</h2>
-    <div class="divider"></div>
-    <p class="text-gray-300 max-w-3xl mx-auto text-center">
-      After establishing consistency and passing the Combine, focus on your funded account, scaling your strategy, and maximizing payouts. Good luck — trade smart, protect risk, and journal everything.
-    </p>
-    <div class="text-center mt-6">
-      <a href="https://github.com/maanpatel-finance" target="_blank" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-xl text-white font-semibold">
-        <i class="fab fa-github mr-2"></i>View Maan Patel on GitHub
-      </a>
+    <div class="glass p-8 text-center shadow-md">
+      <h2 class="text-3xl mb-2 text-blue-700">🌟 Next Steps</h2>
+      <div class="divider"></div>
+      <p class="text-gray-700 max-w-3xl mx-auto">
+        After passing the Combine, focus on funded trading, scaling your risk management, and refining your system for consistency and longevity.
+      </p>
+      <div class="text-center mt-6">
+        <a href="https://github.com/maanpatel-finance" target="_blank" class="px-6 py-3 bg-blue-600 hover:bg-blue-500 rounded-xl text-white font-semibold shadow-md">
+          <i class="fab fa-github mr-2"></i>View Maan Patel on GitHub
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-center mt-16 py-10 border-t border-gray-800">
-    <p class="text-gray-400 mb-2">Built by <strong>Maan Patel</strong></p>
-    <p class="text-gray-400">📧 <a href="mailto:pmaan609@gmail.com" class="hover:underline text-indigo-400">pmaan609@gmail.com</a></p>
+  <footer class="bg-white text-center mt-16 py-10 border-t border-blue-100">
+    <p class="text-gray-600 mb-2">Built by <strong>Maan Patel</strong></p>
+    <p class="text-gray-600">📧 <a href="mailto:pmaan609@gmail.com" class="hover:underline text-blue-600">pmaan609@gmail.com</a></p>
     <p class="text-sm text-gray-500 mt-2">
-      <a href="https://github.com/maanpatel-finance/maanpatel-finance.github.io" target="_blank" class="text-indigo-400 hover:underline">
+      <a href="https://github.com/maanpatel-finance/maanpatel-finance.github.io" target="_blank" class="text-blue-600 hover:underline">
         View this project on GitHub
       </a> | © 2025
     </p>

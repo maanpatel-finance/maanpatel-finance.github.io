@@ -24,4 +24,4 @@ This repository documents my independent research in futures trading using Topst
 ---
 
 *Created by Maan Patel*  
-For educational and research purposes only. Not financial advice.
+For educational and research purposes only. Not financial advice. 
